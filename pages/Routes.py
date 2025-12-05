@@ -12,6 +12,14 @@ st.set_page_config(page_title="Route Details", page_icon="🗺️", layout="cent
 # --- CUSTOM CSS ---
 st.markdown("""
     <style>
+    /* FORCE DARK MODE */
+    .stApp { background-color: #0e1117; }
+
+    /* FONT FAMILY */
+    html, body, [class*="css"] {
+        font-family: 'Corporate A BQ Light', 'Corporate A BQ', Arial, sans-serif !important;
+    }
+
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
     header {visibility: hidden;}
@@ -25,7 +33,6 @@ st.markdown("""
         margin-bottom: 20px;
         border-radius: 10px;
     }
-    
     .banner-container img {
         width: 100%;
         height: 100%;
@@ -33,16 +40,17 @@ st.markdown("""
         object-position: center;
     }
 
-    h1, h2, h3 {text-align: center !important; color: white !important; margin-top: 1rem;}
-    p, div, span {color: white !important;}
+    /* Text Colors */
+    h1, h2, h3, h4, p, div, span, label, li, td, th {
+        color: white !important;
+    }
+    h1, h2, h3 {text-align: center !important; margin-top: 1rem;}
 
     .main-content {padding: 0rem 1rem; max-width: 800px; margin: 0 auto; text-align: center;}
 
-    /* Petronas Teal Links */
     a {color: #00D2BE !important; text-decoration: none; font-weight: bold;}
     a:hover {text-decoration: underline; color: #A0F0E6 !important;}
 
-    /* Petronas Teal Buttons */
     div.stButton > button {
         display: block; 
         margin: 0 auto; 
@@ -50,6 +58,7 @@ st.markdown("""
         color: black !important; 
         width: 100%;
         border: none;
+        font-family: 'Corporate A BQ Light', sans-serif !important;
     }
 
     table {margin-left: auto !important; margin-right: auto !important;}
@@ -132,7 +141,6 @@ try:
         if len(points) > 1:
             route_path = get_osrm_route(points)
             if route_path:
-                # Use Petronas Teal for the line
                 folium.PolyLine(route_path, color="#00D2BE", weight=5, opacity=0.8).add_to(m)
             else:
                 folium.PolyLine(points, color="#00D2BE", weight=5, opacity=0.8, dash_array='5').add_to(m)
