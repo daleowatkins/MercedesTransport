@@ -6,7 +6,7 @@ import re
 import base64
 import os
 
-# 1. Page Config - Rebranded Title and Icon
+# 1. Page Config
 st.set_page_config(page_title="Mercedes-AMG Transport", page_icon="🏎️", layout="centered")
 
 # --- CUSTOM CSS ---
@@ -14,17 +14,54 @@ st.markdown("""
     <style>
     /* 1. FORCE DARK MODE BACKGROUND */
     .stApp {
-        background-color: #0e1117; /* Dark Grey/Blue Background */
+        background-color: #0e1117;
     }
     
-    /* 2. Hide Streamlit Default Elements */
+    /* 2. FORCE FONT FAMILY */
+    html, body, [class*="css"] {
+        font-family: 'Corporate A BQ Light', 'Corporate A BQ', Arial, sans-serif !important;
+    }
+    
+    /* 3. INPUT BOX FIX (Crucial for visibility) */
+    /* Target the container of the input */
+    div[data-baseweb="input"] {
+        background-color: #262730 !important; /* Dark Grey Background */
+        border: 1px solid #444 !important;
+    }
+    /* Target the text inside the input */
+    input[type="text"] {
+        color: white !important;
+        -webkit-text-fill-color: white !important; /* Fix for some browsers */
+        caret-color: #00D2BE; /* Teal cursor */
+    }
+    /* Target the label above the input */
+    label {
+        color: white !important;
+    }
+
+    /* 4. EXPANDER / PASSENGER NAME FIX */
+    .streamlit-expanderHeader {
+        background-color: #262730 !important; /* Dark Grey header */
+        color: white !important; /* White Text */
+        border: 1px solid #444;
+        font-family: 'Corporate A BQ Light', sans-serif !important;
+    }
+    /* Fix hover state for expander */
+    .streamlit-expanderHeader:hover {
+        color: #00D2BE !important; /* Teal on hover */
+    }
+    div[data-testid="stExpander"] {
+        border: none;
+    }
+    
+    /* 5. GENERAL UI HIDING */
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
     header {visibility: hidden;}
     .stAppDeployButton {display:none;}
     [data-testid="stSidebar"] {display: none;}
 
-    /* 3. Professional Banner Style */
+    /* 6. BANNER */
     .banner-container {
         width: 100%;
         height: 285px; 
@@ -32,7 +69,6 @@ st.markdown("""
         margin-bottom: 20px;
         border-radius: 10px;
     }
-    
     .banner-container img {
         width: 100%;
         height: 100%;
@@ -40,58 +76,33 @@ st.markdown("""
         object-position: center;
     }
     
-    /* Global Text Styling - Forces White Text */
-    h1, h2, h3, h4, h5, h6, p, div, span, label {
+    /* 7. TEXT & COLORS */
+    h1, h2, h3, h4, p, div, span {
         color: white !important;
     }
-    
-    /* Center Titles specifically */
     h1, h3 {
         text-align: center !important;
         margin-top: 1rem;
     }
     
-    /* 4. Petronas Teal Link Style (#00D2BE) */
     .route-link {
         color: #00D2BE !important;
         font-weight: bold;
         text-decoration: none !important;
     }
-    .route-link:hover {
-        color: #A0F0E6 !important;
-        text-decoration: none !important;
-    }
     
-    /* Expander Styling */
-    .streamlit-expanderHeader {
-        background-color: #1F1F1F;
-        color: white !important;
-        border: 1px solid #333;
-    }
-    div[data-testid="stExpander"] {
-        background-color: transparent;
-        color: white;
-    }
-    
-    /* Button Styling - Mercedes Teal */
+    /* 8. BUTTONS */
     div.stButton > button {
         width: 100%;
         background-color: #00D2BE !important;
-        color: black !important; /* Black text reads better on Teal */
+        color: black !important;
         border: none;
         font-weight: bold;
+        font-family: 'Corporate A BQ Light', sans-serif !important;
     }
     div.stButton > button:hover {
         background-color: #A0F0E6 !important;
         color: black !important;
-    }
-    
-    /* Input Field Adjustments for Dark Mode */
-    div[data-baseweb="input"] {
-        background-color: #262730;
-    }
-    input {
-        color: white !important;
     }
     </style>
     """, unsafe_allow_html=True)
@@ -147,7 +158,6 @@ banner_b64 = get_base64_image("banner.jpg")
 if banner_b64:
     banner_html = f'<img src="data:image/jpg;base64,{banner_b64}">'
 else:
-    # Fallback URL - Mercedes F1 Car
     banner_html = '<img src="https://media.formula1.com/image/upload/f_auto,c_limit,w_1440,q_auto/f_auto/q_auto/content/dam/fom-website/2018-redesign-assets/team%20logos/mercedes%202024.png">'
 
 st.markdown(f"""
@@ -181,6 +191,7 @@ if st.session_state.search_performed:
         st.success(f"✅ Found {len(bookings)} passengers")
         
         for index, row in bookings.iterrows():
+            # Header of expander (Passenger Name) now fixed by CSS
             unique_expander_key = f"expander_{user_code}_{index}"
             with st.expander(f"🎫 Passenger: {row['Name']}", expanded=True):
                 
@@ -188,7 +199,6 @@ if st.session_state.search_performed:
                 direction = str(row['Direction']).title()
                 label_text = "Pickup:"
                 show_time, show_return_msg = False, False
-                # Replaced Green/Orange with Teal(CadetBlue)/Silver logic
                 badge_color, icon, pin_color = "blue", "🚌", "cadetblue"
 
                 if "Both" in direction:
