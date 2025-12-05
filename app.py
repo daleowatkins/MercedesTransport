@@ -12,14 +12,19 @@ st.set_page_config(page_title="Mercedes-AMG Transport", page_icon="🏎️", lay
 # --- CUSTOM CSS ---
 st.markdown("""
     <style>
-    /* 1. Hide Streamlit Default Elements */
+    /* 1. FORCE DARK MODE BACKGROUND */
+    .stApp {
+        background-color: #0e1117; /* Dark Grey/Blue Background */
+    }
+    
+    /* 2. Hide Streamlit Default Elements */
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
     header {visibility: hidden;}
     .stAppDeployButton {display:none;}
     [data-testid="stSidebar"] {display: none;}
 
-    /* 2. Professional Banner Style */
+    /* 3. Professional Banner Style */
     .banner-container {
         width: 100%;
         height: 285px; 
@@ -35,18 +40,18 @@ st.markdown("""
         object-position: center;
     }
     
-    /* Global Text Styling */
-    h1 {
-        text-align: center !important;
+    /* Global Text Styling - Forces White Text */
+    h1, h2, h3, h4, h5, h6, p, div, span, label {
         color: white !important;
+    }
+    
+    /* Center Titles specifically */
+    h1, h3 {
+        text-align: center !important;
         margin-top: 1rem;
     }
     
-    h2, h3, p, div {
-        color: white !important;
-    }
-    
-    /* 3. Petronas Teal Link Style (#00D2BE) */
+    /* 4. Petronas Teal Link Style (#00D2BE) */
     .route-link {
         color: #00D2BE !important;
         font-weight: bold;
@@ -60,8 +65,12 @@ st.markdown("""
     /* Expander Styling */
     .streamlit-expanderHeader {
         background-color: #1F1F1F;
-        color: white;
+        color: white !important;
         border: 1px solid #333;
+    }
+    div[data-testid="stExpander"] {
+        background-color: transparent;
+        color: white;
     }
     
     /* Button Styling - Mercedes Teal */
@@ -75,6 +84,14 @@ st.markdown("""
     div.stButton > button:hover {
         background-color: #A0F0E6 !important;
         color: black !important;
+    }
+    
+    /* Input Field Adjustments for Dark Mode */
+    div[data-baseweb="input"] {
+        background-color: #262730;
+    }
+    input {
+        color: white !important;
     }
     </style>
     """, unsafe_allow_html=True)
@@ -176,7 +193,7 @@ if st.session_state.search_performed:
 
                 if "Both" in direction:
                     label_text, show_time, show_return_msg = "Pickup & Dropoff:", True, True
-                    badge_color, icon, pin_color = "green", "🔄", "darkgreen" # Keep green for 'Go' status
+                    badge_color, icon, pin_color = "green", "🔄", "darkgreen" 
                 elif "To" in direction:
                     label_text, show_time, show_return_msg = "Pickup:", True, False
                     badge_color, icon, pin_color = "orange", "➡️", "cadetblue"
