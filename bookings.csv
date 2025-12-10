@@ -25,8 +25,10 @@ Hak16,Pelin Hakverir Kamar,Route 4 - Brackley A,"Jct Westminster Cresent, Buckin
 Hak16,Dogay Kamar,Route 4 - Brackley A,"Jct Westminster Cresent, Buckingham Rd, Brackley",https://w3w.co/rocker.bystander.grid,Both,52.027989,-1.139699,17:45:00
 Chr17,Craig  Christian,Route 7 - Buckingham,"Bus Stop, Marston Way, Daventry",https://w3w.co/monday.qualifier.super,Both,52.275887,-1.156823,18:05:00
 Chr17,Sarah Christian,Route 7 - Buckingham,"Bus Stop, Marston Way, Daventry",https://w3w.co/monday.qualifier.super,Both,52.275887,-1.156823,18:05:00
-Bee18,Andrew Beeley,Route 14 - Leamington,"Bus Stop (Farrington Cl), Dovehouse Dr, Wellesbourne",https://w3w.co/model.drilled.shifters,Both,52.188053,-1.601131,17:20:00
-Bee18,Lucy Beeley,Route 14 - Leamington,"Bus Stop (Farrington Cl), Dovehouse Dr, Wellesbourne",https://w3w.co/model.drilled.shifters,Both,52.188053,-1.601131,17:20:00
+Bee18,Andrew Beeley,Route 14 - Leamington,"Bus Stop (Farrington Cl), Dovehouse Dr, Wellesbourne",https://w3w.co/model.drilled.shifters,From Party Only,52.188053,-1.601131,17:20:00
+Bee18,Lucy Beeley,Route 14 - Leamington,"Bus Stop (Farrington Cl), Dovehouse Dr, Wellesbourne",https://w3w.co/model.drilled.shifters,From Party Only,52.188053,-1.601131,17:20:00
+Bee18,Andrew Beeley,Route 14 - Leamington,"Bus Stop (Opp Northgate Church), N Rock, Warwick",https://w3w.co/foster.jazz.herbs,To Party Only,52.28373,-1.589786,18:15:00
+Bee18,Lucy Beeley,Route 14 - Leamington,"Bus Stop (Opp Northgate Church), N Rock, Warwick",https://w3w.co/foster.jazz.herbs,To Party Only,52.28373,-1.589786,18:15:00
 Jer19,Bryce Jersing,Route 3 - Bicester,"Bus Stop(Greenwood Dr), Shakespeare Dr, Bicester",https://w3w.co/cards.importing.report,Both,51.903124,-1.172148,17:35:00
 Jer19,Emma Gregory,Route 3 - Bicester,"Bus Stop(Greenwood Dr), Shakespeare Dr, Bicester",https://w3w.co/cards.importing.report,Both,51.903124,-1.172148,17:35:00
 Sce20,Amy Scerri,Route 5 - Brackley B,"Bus Stop, Poppyfields Way, Brackley",https://w3w.co/smoke.hoping.justifies,Both,52.042623,-1.141601,17:20:00
@@ -389,8 +391,7 @@ Ket232,Andrew Kettle,Route 15 - Leicester,"Bus Stop, St Davids Way, Hinckley",ht
 Ket232,Nicola Kettle,Route 15 - Leicester,"Bus Stop, St Davids Way, Hinckley",https://w3w.co/slick.reach.closer,Both,52.497264,-1.478502,18:25:00
 web233,will webster,Route 15 - Leicester,"Bus Stop, St Davids Way, Hinckley",https://w3w.co/slick.reach.closer,Both,52.497264,-1.478502,18:25:00
 web233,georgia webster,Route 15 - Leicester,"Bus Stop, St Davids Way, Hinckley",https://w3w.co/slick.reach.closer,Both,52.497264,-1.478502,18:25:00
-Par234,Murtaza Parikh,Route 18 - Northampton,"Bus Stop (Opp War Memorial), Wellingborough Rd",https://w3w.co/verbs.thinks.damp,Both,52.240203,-0.887311,17:25:00
-Par234,Sriram Chandrashekharaiah,Route 18 - Northampton,"Bus Stop (Opp War Memorial), Wellingborough Rd",https://w3w.co/verbs.thinks.damp,Both,52.240203,-0.887311,17:25:00
+Par234,Murtaza Parikh,Route 18 - Northampton,"Bus Stop (Opp War Memorial), Wellingborough Rd",https://w3w.co/verbs.thinks.damp,To Party Only,52.240203,-0.887311,17:25:00
 She235,Tom Shepherd,Route 6 - Brixworth,"Bus Stop (Opp Sandy Hill Ln), Overstone Rd, Moulton",https://w3w.co/powder.chart.jump,Both,52.288877,-0.841944,17:05:00
 She235,Zara Burgess,Route 6 - Brixworth,"Bus Stop (Opp Sandy Hill Ln), Overstone Rd, Moulton",https://w3w.co/powder.chart.jump,Both,52.288877,-0.841944,17:05:00
 Sea236,Pete Searle,Route 12 - Kettering,"Bus Stop (The Briars), Branbleside, Kettering",https://w3w.co/domestic.cadet.relief,Both,52.41668,-0.719723,17:55:00
@@ -719,3 +720,5 @@ Pol426,Matthew Polley,Route 11 - Coventry West,"Ramada Hotel, Butts, Coventry",h
 Pol426,Guest of Matthew Polley,Route 11 - Coventry West,"Ramada Hotel, Butts, Coventry",https://w3w.co/drive.copy.tiger,Both,52.404902,-1.52154,18:10:00
 Cam427,Fergus Cameron,Route 16 - Market Harborough,"Bus Stop (Denhams), The Square, MH",https://w3w.co/covers.hamsters.jokers,Both,52.477779,-0.920895,17:50:00
 Cam427,Bethany McGarvey,Route 16 - Market Harborough,"Bus Stop (Denhams), The Square, MH",https://w3w.co/covers.hamsters.jokers,Both,52.477779,-0.920895,17:50:00
+Jac218,Lucie Jackson,Route 19 - Oxford,"Bus Stop (Duke of Monmouth PH), Abingdon Rd, Oxford",https://w3w.co/wider.carbon.shares,Both,51.737427,-1.252025,16:55:00
+Jac218,Obi Anthony,Route 19 - Oxford,"Bus Stop (Duke of Monmouth PH), Abingdon Rd, Oxford",https://w3w.co/wider.carbon.shares,Both,51.737427,-1.252025,16:55:00
