@@ -459,8 +459,8 @@ Ste269,Alina Liedtke,Route 3 - Bicester,"Bus Stop, Queens Rd, Marlow",https://w3
 McM270,Joey McMillan,Route 8 - Cherwell Villages,"Post Box, North Street, Fritwell",https://w3w.co/ambushes.swam.colleague,Both,51.960988,-1.238992,17:05:00
 Xu271,Valerie Xu,Route 4 - Brackley A,"Bus Stop (Market Pl), High St, Brackley",https://w3w.co/applauded.forge.onto,Both,52.027935,-1.14855,17:40:00
 Xu271,Carla Herrero Cornejo,Route 4 - Brackley A,"Bus Stop (Market Pl), High St, Brackley",https://w3w.co/applauded.forge.onto,Both,52.027935,-1.14855,17:40:00
-Sco272,Matt Scott,Route 16 - Market Harborough,"Bus Stop (Opp Freemasons PH), St Marys Road, MH",https://w3w.co/hourglass.remove.grant,Both,52.478129,-0.914608,17:40:00
-Sco272,Roseanne Boland,Route 16 - Market Harborough,"Bus Stop (Opp Freemasons PH), St Marys Road, MH",https://w3w.co/hourglass.remove.grant,Both,52.478129,-0.914608,17:40:00
+Sco272,Matt Scott,Route 16 - Market Harborough,"Bus Stop (Opp Freemasons PH), St Marys Road, MH",https://w3w.co/hourglass.remove.grant,From Event Only,52.478129,-0.914608,17:40:00
+Sco272,Roseanne Boland,Route 16 - Market Harborough,"Bus Stop (Opp Freemasons PH), St Marys Road, MH",https://w3w.co/hourglass.remove.grant,From Event Only,52.478129,-0.914608,17:40:00
 Ran273,Nithin Rangarajan,Route 16 - Market Harborough,"Bus Stop (Opp Freemasons PH), St Marys Road, MH",https://w3w.co/hourglass.remove.grant,Both,52.478129,-0.914608,17:40:00
 Aba275,Biiftuu Aba-Godu,Route 4 - Brackley A,"Bus Stop (St James Rd), Oxford Rd, Brackley",https://w3w.co/pave.slug.behave,Both,52.023677,-1.150127,17:30:00
 Aba275,Harsha Dumree,Route 4 - Brackley A,"Bus Stop (St James Rd), Oxford Rd, Brackley",https://w3w.co/pave.slug.behave,Both,52.023677,-1.150127,17:30:00
@@ -732,3 +732,7 @@ Win431,James Wingfield,Route 13 - Kingsthorpe,"Bus Stop, (Opp Windmill PH), Welf
 Win431,Helen Wingfield,Route 13 - Kingsthorpe,"Bus Stop, (Opp Windmill PH), Welford Rd, Kingsthorpe",https://w3w.co/march.shiny.places,Both,52.270631,-0.914751,18:00:00
 Bha432,Sean Bhatia,Route 3 - Bicester,"Bus Stop (Kingsmere Co-op), Whitelands Way, Bicester",https://w3w.co/reporters.stared.expecting,Both,51.893502,-1.169658,17:45:00
 Bha432,Nawal Aljaeedi,Route 3 - Bicester,"Bus Stop (Kingsmere Co-op), Whitelands Way, Bicester",https://w3w.co/reporters.stared.expecting,Both,51.893502,-1.169658,17:45:00
+Mil433,Glenn Miller,Route 15 - Leicester,"Bus Stop, Gipsy Ln, Nuneaton",https://w3w.co/monks.keep.really,Both,52.496779,-1.472303,18:30:00
+Mil433,Erica Miller,Route 15 - Leicester,"Bus Stop, Gipsy Ln, Nuneaton",https://w3w.co/monks.keep.really,Both,52.496779,-1.472303,18:30:00
+Mil434,Samuel Miller,Route 15 - Leicester,"Bus Stop, Gipsy Ln, Nuneaton",https://w3w.co/monks.keep.really,Both,52.496779,-1.472303,18:30:00
+Mil434,Holly King,Route 15 - Leicester,"Bus Stop, Gipsy Ln, Nuneaton",https://w3w.co/monks.keep.really,Both,52.496779,-1.472303,18:30:00
